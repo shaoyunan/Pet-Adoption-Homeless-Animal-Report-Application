@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean name="UserDAO" class="com.myspring.petfinder.dao.UserDAO" scope="request" />
+	<bean name="PetDAO" class="com.myspring.petfinder.dao.PetDAO" scope="request" />
+	<bean name="RequestDAO" class="com.myspring.petfinder.dao.RequestDAO" scope="request" />
+	<bean name="EmployeeDAO" class="com.myspring.petfinder.dao.EmployeeDAO" scope="request" />
+	<bean name="ReportDAO" class="com.myspring.petfinder.dao.ReportDAO" scope="request" />
+	<bean name="AnimalDAO" class="com.myspring.petfinder.dao.AnimalDAO" scope="request" />
+</beans>
